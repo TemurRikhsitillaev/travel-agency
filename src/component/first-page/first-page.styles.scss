@@ -1,0 +1,128 @@
+.first-page-container {
+  width: 100vw;
+  height: 100vh;
+  background: #c4c4c4;
+  padding: 0 8.3vw;
+  margin-bottom: 12px;
+  color: #ffffff;
+
+  a,
+  button {
+    color: #ffffff;
+  }
+
+  .first-page-navigation-container {
+    width: 100%;
+    height: 78px;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 89px;
+
+    .first-page-logo {
+      font-size: 1.25rem; //20px
+      line-height: 30px;
+      font-weight: 600;
+
+      margin-right: 40.625vw;
+    }
+
+    display: flex;
+    .first-page-navigation-items-container {
+      display: flex;
+      align-items: center;
+      gap: 2.7vw;
+      margin-right: 3.8vw;
+
+      .first-page-navigation-item {
+        width: max-content;
+
+        .first-page-navigation-link {
+          font-size: 0.875rem; //14px
+          // color: #ffffff;
+        }
+      }
+    }
+
+    .first-page-registration-button {
+      width: 114px;
+      height: 40px;
+      background: #03b3a1;
+      border: 0;
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: 0.875rem;
+      line-height: 21px;
+      cursor: pointer;
+    }
+  }
+
+  .first-page-h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 75px;
+    /* or 156% */
+
+    text-align: right;
+    letter-spacing: 0.005em;
+
+    color: #ffffff;
+
+    margin-bottom: 30vh; //change it
+  }
+
+  .first-page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .first-page-progress-bar-number-container {
+      color: #ffffff;
+
+      .first-page-number {
+        font-size: 1.5rem;
+        .first-page-number-active {
+          font-size: 2rem;
+        }
+        margin-bottom: 10px;
+      }
+
+      .first-page-progress-bar {
+        width: 19.03vw;
+        height: 6px;
+        background: rgba($color: #ffffff, $alpha: 0.4);
+
+        border-radius: 8px;
+
+        .first-page-progress-bar-active {
+          display: block;
+          width: 6.46vw;
+          height: 6px;
+          background: #000;
+          background: #ffffff;
+
+          border-radius: 8px;
+        }
+      }
+    }
+    .first-page-see-more-button {
+      width: 14.375vw; //207px
+      height: 60px;
+      background: rgb(0, 0, 0, 0.2);
+      border: 0;
+      padding: 15px 2.36vw;
+      border-radius: 40px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .first-page-title {
+        color: #ffffff;
+        letter-spacing: 0.005em;
+        font-size: 1.25rem; // 20px
+        line-height: 30px;
+      }
+    }
+  }
+}

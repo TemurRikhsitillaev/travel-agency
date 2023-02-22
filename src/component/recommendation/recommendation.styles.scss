@@ -1,0 +1,96 @@
+.recommendation-container {
+  width: 100vw;
+  height: 712px;
+  padding: 132px 8.3vw;
+  margin-bottom: 40px;
+  background: #ffffff;
+
+  .recommendation-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: rgb(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+  }
+
+  .recommendation-carousel-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .recommendation-carousel-arrow-left,
+    .recommendation-carousel-arrow-right {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      background: transparent;
+      border: 0;
+      border-radius: 50%;
+      top: calc(50% - 16px);
+      cursor: pointer;
+    }
+
+    .recommendation-carousel-arrow-left {
+      left: -1.5vw;
+
+      .default-button-left {
+        transform: rotate(180deg);
+      }
+    }
+
+    .recommendation-carousel-arrow-right {
+      right: -1.5vw;
+    }
+
+    .recommendation-carousel-item {
+      width: 19.5vw;
+      height: 412px;
+      padding: 16px 16px 20px 16px;
+      background: #ffffff;
+      box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.05);
+      border-radius: 24px;
+
+      .recommendation-carousel-item-image-container {
+        width: 100%;
+        height: 272px;
+        background: #c4c4c4;
+        border-radius: 24px;
+        margin-bottom: 14px;
+      }
+      .recommendation-carousel-item-place-title {
+        width: max-content;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.005em;
+        color: #000000;
+        margin-bottom: 4px;
+      }
+      .recommendation-carousel-item-tourism-type {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+        color: rgb(0, 0, 0, 0.5);
+      }
+      .recommendation-carousel-item-price {
+        color: rgb(0, 0, 0, 0.5);
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.005em;
+
+        .price {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 30px;
+          /* identical to box height */
+
+          letter-spacing: 0.005em;
+
+          color: #04a493;
+        }
+      }
+    }
+  }
+}

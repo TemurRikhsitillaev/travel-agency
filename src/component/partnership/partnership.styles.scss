@@ -1,0 +1,29 @@
+.partnership-container {
+  width: 100vw;
+  height: 398px;
+  padding: 27px 8.3vw 0 8.3vw;
+  margin-bottom: 28px;
+  text-align: center;
+  background: #ffffff;
+
+  .partnership-title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 60px;
+    color: #223939;
+    margin-bottom: 16px;
+  }
+  .partnership-sub-title {
+    color: rgb(0, 0, 0, 0.3);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+  .partners-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
