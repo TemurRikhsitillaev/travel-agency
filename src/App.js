@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import LandingPage from "./component/landing-page/landing-page.component";
+import Partners from "./component/partners-page/partners.component";
+import Recommendation from "./component/recommendation/recommendation.component";
+import Results from "./component/results/results.component";
+import HolidayPackages from "./component/holiday-packages/holiday-packages.component";
+import BestChoice from "./component/best-choice/best-choice-component";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <LandingPage />
+      <Partners />
+      <Recommendation />
+      <Results />
+      <HolidayPackages />
+      <BestChoice />
+    </>
   );
-}
+};
 
 export default App;

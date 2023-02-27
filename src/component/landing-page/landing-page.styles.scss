@@ -1,0 +1,234 @@
+.landing-page {
+  width: 100vw;
+  height: 100vh;
+  background: #c4c4c4;
+  color: #ffffff;
+  padding: 0 8.3vw;
+  font-size: 16px;
+
+  a,
+  button {
+    color: #ffffff;
+  }
+
+  .navigation-bar {
+    width: 100%;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #c4c4c4;
+    top: 0;
+    left: 0;
+    margin-bottom: 12vh;
+
+    .logo {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .menu-container {
+      display: flex;
+      align-items: center;
+      gap: 2.7vw;
+
+      .menu-item {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+      }
+
+      .sign-up-button {
+        width: 114px;
+        height: 40px;
+        background: #03b3a1;
+        border: 0;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        margin-left: 1vw;
+      }
+    }
+
+    .burger-menu {
+      display: none;
+      max-width: 30px;
+      max-height: 30px;
+      background: transparent;
+      border: 0;
+
+      .burger-menu-icon {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .landing-page-title {
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 75px;
+    text-align: right;
+    letter-spacing: 0.005em;
+    margin-bottom: 38vh;
+  }
+
+  .landing-page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .page-number-container {
+      .page-number {
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: 36px;
+        color: rgb(256, 256, 256, 0.4);
+        margin-bottom: 10px;
+
+        .current-page {
+          font-size: 1.4em;
+          color: rgb(256, 256, 256);
+        }
+      }
+    }
+
+    .page-slider {
+      width: 19vw;
+      height: 6px;
+      background: rgb(256, 256, 256, 0.4);
+      border-radius: 8px;
+      overflow: hidden;
+
+      .current-page-slider {
+        display: block;
+        width: 30%;
+        height: 6px;
+        background: rgb(256, 256, 256);
+      }
+    }
+
+    .see-more-button {
+      width: 207px;
+      height: 60px;
+      background: rgb(0, 0, 0, 0.2);
+      border: 0;
+      border-radius: 40px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .landing-page {
+    .landing-page-title {
+      font-size: 2.5em;
+      margin-bottom: 35vh;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .landing-page {
+    .navigation-bar {
+      .menu-container {
+        display: none;
+      }
+      .burger-menu {
+        display: block;
+      }
+    }
+    .landing-page-title {
+      font-size: 2.2em;
+      line-height: 60px;
+    }
+    .landing-page-footer {
+      .page-number-container {
+        .page-number {
+          font-size: 1.2em;
+          line-height: 30px;
+
+          .current-page {
+            font-size: 1.4em;
+          }
+        }
+      }
+
+      .see-more-button {
+        width: 157px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 30px;
+        gap: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .landing-page {
+    .landing-page-title {
+      font-size: 2em;
+      line-height: 50px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .landing-page {
+    .navigation-bar {
+      .logo {
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 30px;
+      }
+    }
+    .landing-page-title {
+      font-size: 1.5em;
+      line-height: 40px;
+    }
+    .landing-page-footer {
+      .page-number-container {
+        .page-number {
+          font-size: 1em;
+          line-height: 30px;
+
+          .current-page {
+            font-size: 1.4em;
+          }
+        }
+      }
+
+      .see-more-button {
+        width: 147px;
+        height: 45px;
+        font-size: 1em;
+        line-height: 30px;
+        gap: 5px;
+
+        .arrow-icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .landing-page {
+    .landing-page-title {
+      font-size: 1.2em;
+      line-height: 30px;
+      margin-bottom: 40vh;
+    }
+  }
+}
